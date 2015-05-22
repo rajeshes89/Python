@@ -25,8 +25,6 @@ for data in word_file:
     
 word = list_of_words[random.randrange(len(list_of_words))]
 
-
-
 word_len = len(word)
 
 for i in range(word_len):
@@ -66,9 +64,5 @@ while 1:
     else:
         print "No more chances :("
         break
-
-
-
-
 
 sys.exit()    
