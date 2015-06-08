@@ -1,0 +1,29 @@
+import os
+
+if os.name == "nt" or os.name == "dos":
+    fileList = "dir /B"
+    sortReverse = "sort /R"
+elif os.name == "posix":
+    fileList = "ls -l"
+    sortReverse = "sort -r"
+else:
+    sys.exit("OS not supported by this program")
+
+dirOut = os.popen(fileList,"r")
+sortOut = os.popen(sortReverse)
+filename = dirOut.read()
+
+print( "Before sending to sort")
+print("Output of %s" %fileList)
+print (filenames)
+
+sortIn.write(filenames)
+dirOut.close()
+sortIn.close()
+
+print ("After sending to sort")
+print ("Output from %s" %sortReverse)
+print (sortOut.read())
+
+sortOut.close()
+
