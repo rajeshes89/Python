@@ -1,0 +1,19 @@
+#classSetGet2
+
+from classSetGet import Time
+
+time1 = Time()
+time1.printMilitary()
+time1.printStandard()
+
+time1.setTime(13,27,6)
+
+time1.printMilitary()
+time1.printStandard()
+
+
+time1.setHour (4)
+time1.setMinute(3)
+time1.setSecond(34)
+#time1.printMilitary()
+#print("Military time after setHour,setMinute and setSecond",time1.printMilitary())
