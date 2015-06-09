@@ -1,0 +1,42 @@
+#Abstract base class
+
+class Employee:
+    def __init__(self,first,last):
+        if self.__class__ == Employee:
+            raise Exception("Cannot create class Employee")
+        self.firstName = first
+        self.lastName = last
+    def __str__(self):
+        return "%s %s" %(self.firstName,self.lastName)
+    def _checkPositive(self,value):
+        if value < 0:
+            raise Exception("%s is negative")
+        else:
+            return value
+    def earning(self):
+        raise Exception("cannot call abstract method")
+
+class Boss(Employee):
+    def __init__(self,first,last,salary):
+        Employee.__init__(self,first,last)
+        self.weeklySalary = self._checkPositive(float(salary))
+    def earnings(self):
+        return self.weeklySalary
+    def __str__(self):
+        return "%17s: %s" %("Boss" ,Employee.__str__(self))
+
+class PieceWorker(Employee):
+    def __init__(self,first,last,wage,quantity):
+        Employee.__init__(self,first,last)
+        self.wagePerPiece = self._checkPositive(float(wage))
+        self.quantity = self._checkPositive(quantity)
+    def earnings(self):
+        return self.quantity * self.wagePerPiece
+    def __str__(self):
+        return "%17s: %s" %("PieceWorker",Employee.__str__(self))
+
+
+        
+employees = [Boss("john","smith",800.00),PieceWorker("bob","Lewis",2.5,200)]
+for emp in employees:
+    print (emp,emp.earnings())
