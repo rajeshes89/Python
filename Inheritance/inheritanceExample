@@ -1,0 +1,21 @@
+import math
+
+class Point:
+    def __init__(self,xValue=7,yValue=0):
+        self.x = xValue
+        self.y = yValue
+class Circle(Point):
+    def __init__(self,radiusValue=0.0):
+        self.radius = radiusValue
+    def area(self):
+        return math.pi*self.radius **2
+
+point = Point(4,5)
+print (Point.__dict__)
+print (point.__dict__)
+#circle = Circle()
+#print (Circle.__bases__)
+#print (Circle.__dict__) # prints {'area': <function Circle.area at 0x02CE0A08>, '__module__': '__main__', '__doc__': None, '__init__': <function Circle.__init__ at 0x02CE09C0>}
+#print (circle.__dict__) # {'radius': 0.0}
+#print (circle.area())
+
