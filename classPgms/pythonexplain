@@ -1,0 +1,43 @@
+class Presentation:
+    
+    def intro(self):
+        self.explain = ["python name","indentation"]
+    def datatypes(self):
+        self.datatypes = ['int','string','list','tuple','dictionary']
+        return self.datatypes
+    def int(self):
+        self.explain = ["assignment","del"]
+        return self.explain
+    def string(self):
+        self.string_methods = ["count","split","join","len","lower","upper","endswith","startswith"]
+        self.explain = {"slicing":"'value[0:2]'","usage":"in/not in","format":"%d and .format()"}
+        return self.string_methods,explain
+    def list(self):
+        self.list_methods = ["append","insert","extend","count","index","sort","reverse"]
+        self.explain = ["slicing","concatenation"]
+        return self.list_methods,self.explain
+    def dict(self):
+        self.methods = ["items","keys","values"]
+        self.explain = ["initialization","addValues"]
+        return self.methods,self.explain
+    def tuple(self):
+        self.explain = ("immutable")
+        return self.explain
+    def functions(self):
+        self.explain=("sample function")
+        return self.explain
+    def modules(self):
+        self.explain = ("import diff's","example)
+    def class(self):
+        self.explain = ("class example","init","self")
+    def regex(self):
+        self.explain = ("search","match","findall")
+        
+        
+        
+        
+    
+            
+        
+        
+        
