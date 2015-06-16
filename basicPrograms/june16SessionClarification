@@ -1,0 +1,15 @@
+1. using value in regex
+2. count the words in the string
+  >>> out = "man and man and mani"
+>>> out.count("man")
+
+3. >>> out = "Hello world"
+>>> out[0:8:2]
+'Hlow'
+
+
+
+
+missed topics :
+reverse indexing
+file extension
