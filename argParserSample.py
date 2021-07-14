@@ -1,7 +1,7 @@
 import os
 import re
 import sys
-sys.path.append("/root/kmesh-dataplane-test/fileSystem/automation/featureTesting/kmeshFilesystemTests/tests")
+sys.path.append("/root/test/fileSystem/automation/featureTesting/Tests/tests")
 import pdb
 import time
 import random
