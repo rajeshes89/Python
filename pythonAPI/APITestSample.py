@@ -17,7 +17,7 @@ args_out = parser.parse_args()
 execfile(args_out.config_file)
 ​
 def login_api(url):
-    payload = {"username":"admin@kmesh.io","password":{"account_id":"111122223333","password":"ssaf"}}
+    payload = {"username":"admin@abcd.io","password":{"account_id":"111122223333","password":"ssaf"}}
     r = requests.post(url, data=json.dumps(payload),headers={"content-type":"application/json"})
     print(r.status_code,r.text)
     return json.loads(r.text)
