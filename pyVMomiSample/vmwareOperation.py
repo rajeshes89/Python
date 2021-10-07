@@ -46,7 +46,7 @@ def fabric_bootstrap(user=None, ipv4=None, deployment="aws", keyfile=None, passw
 
 #Create OVF based on the given template
 def create_ovf(template,ovf_dir):
-    #ovftool  vi://administrator@kmesh.io:c@ncunSys500@172.20.1.149/dc1.kmesh.io/vm/Lustre_test test.ovf
+    #ovftool  vi://administrator@kabcd.io:abcd124@10.40.16.149/dc1.abcd.io/vm/Lustre_test test.ovf
     cmd = "ovftool vi://{0}:{1}@{2}/{3}/vm/{4} {5}".format(user,pwd,vcenter_ip,datacenter,template,ovf_dir)
     logger.info("Running the cmd {0}".format(cmd))
     logger.info(os.system(cmd))
