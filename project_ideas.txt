@@ -3,3 +3,5 @@ Practice projects to do in python
 1. Ip subnet calculator
 2. Web scraping - to get the stock/mutual fund data
 3. Create vm in vmware/AWS 
+4. Check leetcode website
+5. Webscraping - daily veg price
